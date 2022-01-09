@@ -18,7 +18,7 @@ def main():
         newline = "\n"
         for rule in rules:
             review_dismissal_actors = [ actor for actor in
-                    rule.get('ReviewDismissalAllowances').get('nodes')] if rule.get('ReviewDismissalAllowances') else []
+                    rule.get('reviewDismissalAllowances').get('nodes')] if rule.get('reviewDismissalAllowances') else []
             push_allowances = [ actor.get('actor') for actor in
                     rule.get('pushAllowances').get('nodes') ] if rule.get('pushAllowances') else []
             output = f"""
